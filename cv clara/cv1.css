@@ -1,0 +1,59 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background: linear-gradient(to left,#ecbc36,#e66510);
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    flex-direction: column; /* Alignement vertical des éléments */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 20px;
+    text-align: left;
+}
+header div {
+    margin-bottom: 10px; /* Espacement entre l'image et les autres éléments */
+}
+header h1 {
+    margin-bottom: 10px; /* Espacement entre le titre et les paragraphes */
+}
+header p {
+    margin: 5px 0; /* Espacement entre les paragraphes */
+    line-height: 1.5;
+}
+header h3 {
+    font-weight: bold; /* Texte en gras */
+    font-size: 2.9em; /* Taille du texte plus grande */
+    align-self: center; /* Positionnement au centre horizontalement */
+    margin-top: 10px; /* Espacement pour éviter qu'il soit trop proche des autres éléments */
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.profile {
+    flex: 1;
+    background-color: #d8b34e;
+    padding: 20px;
+    margin-right: 10px;
+}
+.details {
+    flex: 2;
+    padding: 20px;
+}
+.profile h2 {
+    color: #333;
+}
+.details h2 {
+    color: #555;
+}
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+    }
+    .profile {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
